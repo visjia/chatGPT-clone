@@ -3,8 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { hashSync } from 'bcrypt';
 import { getServerSession } from 'next-auth';
 import { AuthOption } from './auth/[...nextauth]';
-import { PrismaClient } from ".prisma/client";
-
+import { PrismaClient } from '@prisma/client';
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
